@@ -1,3 +1,20 @@
+#RetroidNetplay
+
+RetroidNetplay is by DukedDroid and is an unofficial branch of the open-source project RetroArch that supports Netplay on Android Devices. The NetPlay support is CPU intensive and works on High End android devices such as the Nvidia Shield (tested) and powerful phones such as the Galaxy S4 (untested). 
+
+RetroArch is a simple Multi-emulator frontend based on libretro by Themaister. Libretro is an API designed for simple abstraction of the functions inherent in retro-style, 2D games. While the most common use case for libretro has been console emulation, it is equally suited as a platform for almost any 2D game.
+
+RetroidNetplay is open-source software based on the RetroArch and libretro open-source projects.
+
+RetroidNetplay takes great pride in the work of the RetroArch and libretro projects and we're proud to credit the authors here:  [AUTHORS](https://github.com/RetroidNetplay/AUTHORS)
+
+
+Thank you, DukedDroid - noinspiration69@hotmail.com
+
+    RetroidNetplay, maintainer
+    Unofficial Android branch
+
+More information on RetroArch and libretro can be seen in the following RetroArch readme:
 # RetroArch
 
 RetroArch (formerly known as SSNES) is a simple frontend for the libretro API. An API that attempts to generalize
