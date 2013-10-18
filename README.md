@@ -9,7 +9,7 @@ RetroidNetplay is open-source software based on the RetroArch and libretro open-
 RetroidNetplay takes great pride in the work of the RetroArch and libretro projects and we're proud to credit the authors here:  [AUTHORS](https://github.com/RetroidNetplay/AUTHORS)
 
 
-Thank you, DukedDroid - noinspiration69@hotmail.com
+Thank you, DukedDroid - dukeddroid@gmail.com
 
     RetroidNetplay, maintainer
     Unofficial Android branch
