@@ -3,7 +3,7 @@ LOCAL_PATH := $(call my-dir)
 PERF_TEST := 0
 HAVE_NEON := 1
 HAVE_LOGGER := 1
-
+HAVE_NETPLAY :=1
 include $(CLEAR_VARS)
 ifeq ($(TARGET_ARCH),arm)
 LOCAL_CFLAGS += -DANDROID_ARM -marm
@@ -42,6 +42,10 @@ LOCAL_SRC_FILES  +=	$(RARCH_PATH)/griffin/griffin.c
 ifeq ($(HAVE_LOGGER), 1)
 LOCAL_CFLAGS += -DHAVE_LOGGER
 LOGGER_LDLIBS := -llog
+endif
+
+ifeq ($(HAVE_NETPLAY), 1)
+LOCAL_CFLAGS += -DHAVE_NETPLAY 
 endif
 
 ifeq ($(PERF_TEST), 1)

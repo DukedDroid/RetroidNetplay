@@ -743,6 +743,16 @@ bool config_load_file(const char *path)
    CONFIG_GET_INT(input.icade_profile[3], "input_autodetect_icade_profile_pad4");
 #endif
 
+#ifdef HAVE_NETPLAY
+   CONFIG_GET_BOOL_EXTERN(netplay_enable, "netplay_enable");
+   CONFIG_GET_BOOL_EXTERN(netplay_is_client, "isclient");
+   CONFIG_GET_INT_EXTERN(netplay_port, "port");
+   CONFIG_GET_STRING_EXTERN(netplay_server, "host");
+   CONFIG_GET_STRING_EXTERN(netplay_nick, "nickname");
+   CONFIG_GET_INT_EXTERN(netplay_sync_frames, "frame");
+   CONFIG_GET_BOOL_EXTERN(netplay_is_spectate, "is_spectate");
+   
+#endif
    CONFIG_GET_BOOL_EXTERN(config_save_on_exit, "config_save_on_exit");
 
    if (!g_extern.has_set_save_path && config_get_path(conf, "savefile_directory", tmp_str, sizeof(tmp_str)))

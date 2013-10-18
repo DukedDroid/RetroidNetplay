@@ -1587,9 +1587,13 @@ static void init_netplay(void)
    {
       RARCH_LOG("Connecting to netplay host...\n");
       g_extern.netplay_is_client = true;
+  
    }
    else
+   {
       RARCH_LOG("Waiting for client...\n");
+      
+   }  
 
    g_extern.netplay = netplay_new(g_extern.netplay_is_client ? g_extern.netplay_server : NULL,
          g_extern.netplay_port ? g_extern.netplay_port : RARCH_DEFAULT_PORT,

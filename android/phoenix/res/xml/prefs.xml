@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="RetroArch - Main Menu" >
+    android:title="RetroidNetplay - Main Menu" >
 
     <PreferenceScreen android:title="TV Mode">
        <intent
-          android:targetClass="org.retroarch.browser.RetroTVMode"
-          android:targetPackage="org.retroarch" />
+          android:targetClass="org.retroidnetplay.browser.RetroTVMode"
+          android:targetPackage="org.retroidnetplay" />
     </PreferenceScreen>
     <PreferenceScreen android:title="Load Core">
        <intent
-          android:targetClass="org.retroarch.browser.CoreSelection"
-          android:targetPackage="org.retroarch" />
+          android:targetClass="org.retroidnetplay.browser.CoreSelection"
+          android:targetPackage="org.retroidnetplay" />
     </PreferenceScreen>
     <PreferenceScreen android:title="Load Game">
        <intent
-          android:targetClass="org.retroarch.browser.ROMActivity"
-          android:targetPackage="org.retroarch" />
+          android:targetClass="org.retroidnetplay.browser.ROMActivity"
+          android:targetPackage="org.retroidnetplay" />
     </PreferenceScreen>
     <PreferenceScreen android:title="Load Game (History)">
        <intent
-          android:targetClass="org.retroarch.browser.HistorySelection"
-          android:targetPackage="org.retroarch" />
+          android:targetClass="org.retroidnetplay.browser.HistorySelection"
+          android:targetPackage="org.retroidnetplay" />
     </PreferenceScreen>
     <PreferenceScreen android:title="Video Options" >
         <PreferenceCategory android:title="General" >
@@ -63,15 +63,15 @@
                 android:summary="Attempts to find the true refresh rate of monitor. Updates value in &apos;Force refresh rate (Hz)&apos; option. To help ensure accuracy, make sure no intense background services are running, and avoid triggering screensaver."
                 android:title="Calibrate refresh rate" >
                 <intent
-                    android:targetClass="org.retroarch.browser.DisplayRefreshRateTest"
-                    android:targetPackage="org.retroarch" />
+                    android:targetClass="org.retroidnetplay.browser.DisplayRefreshRateTest"
+                    android:targetPackage="org.retroidnetplay" />
             </Preference>
             <Preference
                 android:summary="Sets refresh rate equal to OS-reported value. This might not be accurate for your device."
                 android:title="Set OS-reported refresh rate" >
                 <intent
-                    android:targetClass="org.retroarch.browser.RefreshRateSetOS"
-                    android:targetPackage="org.retroarch" />
+                    android:targetClass="org.retroidnetplay.browser.RefreshRateSetOS"
+                    android:targetPackage="org.retroidnetplay" />
             </Preference>
         </PreferenceCategory>
         <PreferenceCategory android:title="Shaders" >
@@ -91,8 +91,8 @@
                 android:title="GLSL shader"
                 android:dependency="video_shader_enable" >
                 <intent
-                    android:targetClass="org.retroarch.browser.ShaderActivity"
-                    android:targetPackage="org.retroarch" />
+                    android:targetClass="org.retroidnetplay.browser.ShaderActivity"
+                    android:targetPackage="org.retroidnetplay" />
             </Preference>
         </PreferenceCategory>
         <PreferenceCategory android:title="Fonts">
@@ -146,8 +146,8 @@
                 android:summary="Sets IME to be used in-game."
                 android:title="Set Input Method" >
                 <intent
-                    android:targetClass="org.retroarch.browser.IMEActivity"
-                    android:targetPackage="org.retroarch" />
+                    android:targetClass="org.retroidnetplay.browser.IMEActivity"
+                    android:targetPackage="org.retroidnetplay" />
             </Preference>
         </PreferenceCategory>
 
@@ -206,10 +206,10 @@
                 android:title="Input overlay"
                 android:dependency="input_overlay_enable" >
                 <intent
-                    android:targetClass="org.retroarch.browser.OverlayActivity"
-                    android:targetPackage="org.retroarch" />
+                    android:targetClass="org.retroidnetplay.browser.OverlayActivity"
+                    android:targetPackage="org.retroidnetplay" />
             </Preference>
-            <org.retroarch.browser.SeekbarPreference
+            <org.retroidnetplay.browser.SeekbarPreference
                 android:summary="Set the opacity of the touch overlay."
                 android:title="Overlay opacity"
                 android:key="input_overlay_opacity"
@@ -219,208 +219,208 @@
 	        <PreferenceScreen
 	            android:title="Player 1 Custom Binds"
 	            android:dependency="input_autodetect_enable" >
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_up_btn"
 	                android:title="Up Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_down_btn"
 	                android:title="Down Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_left_btn"
 	                android:title="Left Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_right_btn"
 	                android:title="Right Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_a_btn"
 	                android:title="A Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_b_btn"
 	                android:title="B Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_x_btn"
 	                android:title="X Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_y_btn"
 	                android:title="Y Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_start_btn"
 	                android:title="Start Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_select_btn"
 	                android:title="Select Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_l_btn"
 	                android:title="L1 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_r_btn"
 	                android:title="R1 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_l2_btn"
 	                android:title="L2 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_r2_btn"
 	                android:title="R2 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_l3_btn"
 	                android:title="L3 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player1_r3_btn"
 	                android:title="R3 Button" />
 	        </PreferenceScreen>
 	        <PreferenceScreen
 	            android:title="Player 2 Custom Binds"
 	            android:dependency="input_autodetect_enable" >
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_up_btn"
 	                android:title="Up Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_down_btn"
 	                android:title="Down Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_left_btn"
 	                android:title="Left Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_right_btn"
 	                android:title="Right Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_a_btn"
 	                android:title="A Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_b_btn"
 	                android:title="B Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_x_btn"
 	                android:title="X Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_y_btn"
 	                android:title="Y Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_start_btn"
 	                android:title="Start Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_select_btn"
 	                android:title="Select Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_l_btn"
 	                android:title="L1 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_r_btn"
 	                android:title="R1 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_l2_btn"
 	                android:title="L2 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_r2_btn"
 	                android:title="R2 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_l3_btn"
 	                android:title="L3 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player2_r3_btn"
 	                android:title="R3 Button" />
 	        </PreferenceScreen>
 	        <PreferenceScreen
 	            android:title="Player 3 Custom Binds"
 	            android:dependency="input_autodetect_enable" >
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_up_btn"
 	                android:title="Up Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_down_btn"
 	                android:title="Down Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_left_btn"
 	                android:title="Left Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_right_btn"
 	                android:title="Right Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_a_btn"
 	                android:title="A Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_b_btn"
 	                android:title="B Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_x_btn"
 	                android:title="X Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_y_btn"
 	                android:title="Y Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_start_btn"
 	                android:title="Start Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_select_btn"
 	                android:title="Select Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_l_btn"
 	                android:title="L1 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_r_btn"
 	                android:title="R1 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_l2_btn"
 	                android:title="L2 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_r2_btn"
 	                android:title="R2 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_l3_btn"
 	                android:title="L3 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player3_r3_btn"
 	                android:title="R3 Button" />
 	        </PreferenceScreen>
 	        <PreferenceScreen
 	            android:title="Player 4 Custom Binds"
 	            android:dependency="input_autodetect_enable" >
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_up_btn"
 	                android:title="Up Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_down_btn"
 	                android:title="Down Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_left_btn"
 	                android:title="Left Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_right_btn"
 	                android:title="Right Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_a_btn"
 	                android:title="A Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_b_btn"
 	                android:title="B Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_x_btn"
 	                android:title="X Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_y_btn"
 	                android:title="Y Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_start_btn"
 	                android:title="Start Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_select_btn"
 	                android:title="Select Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_l_btn"
 	                android:title="L1 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_r_btn"
 	                android:title="R1 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_l2_btn"
 	                android:title="L2 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_r2_btn"
 	                android:title="R2 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_l3_btn"
 	                android:title="L3 Button" />
-	            <org.retroarch.browser.KeyBindPreference
+	            <org.retroidnetplay.browser.KeyBindPreference
 	                android:key="input_player4_r3_btn"
 	                android:title="R3 Button" />
 	        </PreferenceScreen>
@@ -429,8 +429,8 @@
             <Preference android:title="Report IME"
                 android:summary="Reports the current IME (Input Method Editor) name.">
                 <intent
-                    android:targetClass="org.retroarch.browser.ReportIME"
-                    android:targetPackage="org.retroarch" />
+                    android:targetClass="org.retroidnetplay.browser.ReportIME"
+                    android:targetPackage="org.retroidnetplay" />
             </Preference>
         </PreferenceCategory>
     </PreferenceScreen>
@@ -439,8 +439,8 @@
             <Preference android:title="ROM directory"
                 android:summary="Sets directory where ROM browser will first browse for ROM files.">
                 <intent
-                    android:targetClass="org.retroarch.browser.ROMDirActivity"
-                    android:targetPackage="org.retroarch" />
+                    android:targetClass="org.retroidnetplay.browser.ROMDirActivity"
+                    android:targetPackage="org.retroidnetplay" />
             </Preference>
         </PreferenceCategory>
         
@@ -453,8 +453,8 @@
                 android:summary="Sets directory where to save and load game save files."
                 android:dependency="savefile_directory_enable">
                 <intent
-                    android:targetClass="org.retroarch.browser.SRMDirActivity"
-                    android:targetPackage="org.retroarch" />
+                    android:targetClass="org.retroidnetplay.browser.SRMDirActivity"
+                    android:targetPackage="org.retroidnetplay" />
             </Preference>            
         </PreferenceCategory>
         <PreferenceCategory android:title="Save states">
@@ -466,8 +466,8 @@
                 android:summary="Sets directory where to save and load game save states."
                 android:dependency="savestate_directory_enable">
                 <intent
-                    android:targetClass="org.retroarch.browser.StateDirActivity"
-                    android:targetPackage="org.retroarch" />
+                    android:targetClass="org.retroidnetplay.browser.StateDirActivity"
+                    android:targetPackage="org.retroidnetplay" />
             </Preference>
         </PreferenceCategory>
         <PreferenceCategory android:title="System">
@@ -479,8 +479,8 @@
                 android:summary="Sets directory where system files are loaded from."
                 android:dependency="system_directory_enable">
                 <intent
-                    android:targetClass="org.retroarch.browser.SystemDirActivity"
-                    android:targetPackage="org.retroarch" />
+                    android:targetClass="org.retroidnetplay.browser.SystemDirActivity"
+                    android:targetPackage="org.retroidnetplay" />
             </Preference>
         </PreferenceCategory>
     </PreferenceScreen>
@@ -512,11 +512,27 @@
                 android:summary="Enable real-time rewinding of gameplay. (WARNING: Very CPU intensive - will decrease ingame performance by a lot - only use this option on a powerful device)."
                 android:title="Enable" />
         </PreferenceCategory>
+	<PreferenceCategory android:title="Netplay Configuration" >
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="netplay_enable"
+                android:summary="Enable Netplay for 2 Players by default you Host the game unless you tick the Client box"
+                android:title="Enable Netplay" />
+	   <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="is_client"
+                android:summary="You are the connecting to a server to play"
+                android:title="Client" />
+            <EditTextPreference android:defaultValue="55435" android:title="TCP/UDP Port" android:summary="Port used for NetPlay" android:key="tcpudp_port"/>
+            <EditTextPreference android:summary="IP address to connect to" android:title="Host IP:" android:key="host_ip"/>
+	    <EditTextPreference android:summary="This nickname will appear when you'll join/host a game" android:title="Nickname" android:key="nickname" android:defaultValue="Player 1 Android"/>
+        <EditTextPreference android:summary="Number of delay frame" android:title="Delay Frame" android:key="delay_frame" />
+        </PreferenceCategory>
     </PreferenceScreen>
     <PreferenceScreen android:title="Help">
        <intent
-          android:targetClass="org.retroarch.browser.HelpActivity"
-          android:targetPackage="org.retroarch" />
+          android:targetClass="org.retroidnetplay.browser.HelpActivity"
+          android:targetPackage="org.retroidnetplay" />
     </PreferenceScreen>
     <PreferenceScreen android:title="About">
         <PreferenceCategory android:title="Websites">
